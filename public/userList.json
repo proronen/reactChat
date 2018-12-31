@@ -1,0 +1,84 @@
+[{
+  "id": 66,
+  "first_name": "Jeanette",
+  "last_name": "Penddreth",
+  "last_message" : "21.10.18",
+  "avatar" : 1,
+  "messages" : [{
+	"content" : "msg1 msg1 msg1",
+	"type": "received",
+	"date" : "21.10.18"
+  },{
+	"content" : "msg2 msg2 msg2",
+	"type": "received",
+	"date" : "21.10.18"
+  }]
+}, {
+  "id": 88,
+  "first_name": "Giavani",
+  "last_name": "Frediani",
+  "last_message" : "21.09.18",
+  "avatar" : 2,
+  "messages" : [{
+	"content" : "msg1 msg1 msg1",
+	"type": "received",
+	"date": "21.10.18"
+  },{
+	"content" : "msg2 msg2 msg2",
+	"type": "received",
+ "date": "22.10.18"
+  }]
+}, {
+  "id": 94,
+  "first_name": "Noell",
+  "last_name": "Bea",
+  "last_message" : "21.11.18",
+  "avatar" : 3,
+  "messages" : [{
+	"content" : "msg1 msg1 msg1",
+	"type": "received",
+ 	"date" : "30.10.18"
+  },{
+	"content" : "msg2 msg2 msg2",
+	"type": "received",
+	"date" : "21.10.18"
+  }]
+}, {
+  "id": 102,
+  "first_name": "Willard",
+  "last_name": "Valek",
+  "last_message" : "21.12.18",
+  "avatar" : 4,
+  "messages" : [{
+	"content" : "msg1 msg1 msg1",
+	"type": "received",
+ "date": "21.10.18"
+  },{
+	"content" : "msg2 msg2 msg2",
+	"type": "received",
+ "date": "11.10.18"
+  }]
+}, {
+  "id" : 110,
+  "type" : "group",
+  "group_name" : "The best group chat ever!!!",
+  "participants" : [66,88,94],
+  "avatar" : 5,
+  "last_message" : "21.12.18",
+  "messages" : [{
+	"user_id" : 66,
+	"content" : "msg1 msg1 msg1",
+	"type": "received",
+ "date": "21.10.18"
+  },{
+	"user_id" : 88,
+	"content" : "msg2 msg2 msg2",
+	"type": "received",
+ "date": "15.10.18"
+  },{
+	"user_id" : 94,
+	"content" : "msg2 msg2 msg2",
+	"type": "received",
+ "date": "15.10.18"
+  }]
+}]

@@ -1,32 +1,157 @@
 .App {
+  max-width: 20em;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+}
+
+.conversation {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: solid 1px #00000029;
+  cursor: pointer;
+}
+
+.conversation:last-child {
+  border: 0;
+}
+
+.conversation .left {
+  flex: 0;
+  padding: 0 20px;
+}
+
+.conversation .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.conversation_avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.conversation_name {
+  flex: 1;
+}
+
+.conversation_last_message {
+  flex: 1;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.searchBtn {
+  border: solid 1px #00000059;
+  padding: 10px 12px;
+  border-radius: 22px;
+  background: #80808036;
+  margin-right: 15px;
+  position: relative;
+  z-index: 11111;
+  cursor: pointer;
+}
+
+#search_input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  right: 0;
+  left: 0;
+  flex-direction: row-reverse;
+}
+
+input[type="text"] {
+  height: 60%;
+  width: 78%;
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 5px;
+}
+
+#pushMessageCont {
+  margin-top: 30px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.hide {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form#searchForm input {
+  position: absolute;
+  right: 0;
+  top: 0.5em;
+}
+
+#messagesCont {
+  height: 15em;
+  overflow-y: auto;
+}
+
+#messagesCont > div {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.received .msg_cont {
+  float: left;
+      background: #dc9834;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.sent .msg_cont {
+  float: right;
+  background: #445464;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+div#pushMessageCont input[type=text] {
+  border-radius: 8px;
+  outline: 0;
+  border: solid;
+}
+
+div#pushMessageCont button {
+  background: #445464;
+  border: 0;
+  padding: 6px;
+  color: #fff;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+div#pushMessageCont {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+i.fas.fa-arrow-left {
+  padding: 1px;
+}
+
+i.fas.fa-times {
+  padding: 0 3px;
+}
+
+div#logo {
+  font-size: 42px;
+  display: flex;
+  flex-grow: 1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
